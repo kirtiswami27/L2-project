@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!--header section-->
+
+    <section id="header">
+
+        <a href="#"><img src="Frame 168.png" class="logo" alt=""></a>
+        <!--a href="#"><img src="SkinClinic.png" class="logo" alt=""></a-->
+
+        <nav class="navbar">
+            <a  class="active" href="#Home">Home</a>
+            <a href="#Shop">Shop</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+                    
+        </nav>
+        
+        <div class="icon">
+            <!--a href="#"class=" fas fa-bars" ></a-->
+            <a href="#"class=" fas fa-search" ></a>
+            <a href="#"class=" fas fa-heart" ></a>
+            <a href="#"class="fas fa-shopping-cart"></a>
+
+
+        </div>
+    </section>
+<!-- section 1-->
+    <section  class="cart" id="cart">
+        <div class="content">
+            <a href="#"><img src="img.png" class="logo" alt=""></a>
+            <h1>Cart</h1>
+            <h3>Home/Cart</h3>
+
+        </div>
+    </section>
+        <div class="cart-container">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="sofa.png" alt="Asgard Sofa">
+                    <p>Asgard Sofa</p>
+                  </td>
+                  <td>Rs. 250,000.00</td>
+                  <td>
+                    <input type="number" id="quantity" value="1" min="1">
+                  </td>
+                  <td id="subtotal">Rs. 250,000.00</td>
+                </tr>
+              </tbody>
+            </table>
+      
+            <div class="cart-summary">
+              <h1>Cart Totals</h1>
+              <h2>Subtotal: <span id="cart-subtotal">Rs. 250,000.00</span></h2>
+
+              <h2>Total: <span id="cart-total">Rs. 250,000.00</span></h2>
+              <button id="checkout">Check Out</button>
+            </div>
+          </div>
+      
+          <footer class="cart-footer">
+            <div class="features">
+              <div class="fe-box">
+                <a href="#"class=" fa-regular fa-trophy" ></a>
+                  <h4>High Quality</h4>
+                    <p>Crafted from top materials</p>
+                </div>
+                <div class="fe-box">
+                 <a href="#"class="fa-regular fa-calendar-check" ></a>
+                  <h4>Warranty Protection</h4>
+                     <p>Over 2 years</p></div>
+                 <div class="fe-box">
+                    <a href="#"class=" fa-solid fa-box "></a>
+                     <h4>Free Shipping</h4>
+                      <p>Order over $150</p></div>
+
+                 <div class="fe-box">
+                     <a href="#"class=" fa-regular fa-user" ></a>
+                     <h4>24/7 Support</h4>
+                     <p>Dedicated support</p></div>
+            </div>
+          </footer>
+            
+    <!-- Your code  goes here -->
+    
+
+    <!-- Happy coding 😊 -->
+<script src="./script.js">
+    
+</script>
+</body>
+
+</html>

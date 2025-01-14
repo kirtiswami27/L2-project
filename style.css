@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --white:#fff;
+    --box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    background: var(--bg);
+
+}
+section{
+    padding: 2rem 7%;
+
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+#header{
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    
+}
+.hearder .logo{
+    font-size:  2.5rem;
+    font-weight: bolder;
+}
+.hearder .navbar{
+    position: absolute;
+    top: 100% ;left: 0; right: 0;
+    background: #fff;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    padding: 1rem;
+    clip-Path:ploygon(0 0, 100% 0, 100% 100%, 0 0);
+}
+#header .navbar .active{
+    clip-Path:ploygon(0 0, 100% 0, 100% 100%, 0 0);
+
+}
+#header .navbar a.active,
+#header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+#header .navbar a:hover{
+    background: var(--light-color);
+    color: #fff;
+}
+
+#header .icon a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+#header .icon a:hover{
+    background: var(--light-color);
+    color: #fff;
+}
+html{
+    
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 7rem;
+}
+
+/* media quries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .hearder{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem 7%;
+        
+    }
+}
+@media (max-width:768px){
+    .hearder .icon #menu-bars{
+        display: inline-block;
+    }
+    .hearder .navbar{
+        position:absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        padding: 1rem;
+
+    }
+}
+.cart{
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background: url(Rectangle\ 1.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.cart .content a{
+    
+    align-items: center;
+     
+}
+.cart .content img{
+    width: 110px;
+    align-items: center;
+    margin-bottom: 5px;
+     
+}
+
+
+.cart .content h1{
+    font-size: 4rem;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+.cart .content h3{
+    font-size: 1.5rem;
+    align-items: center;
+    text-transform: capitalize;
+     
+}
+.cart-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 50px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f9f9f9;
+    table-layout: fixed;
+    white-space: nowrap;
+  }
+  
+  .cart-table th{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: #f5e7e7;
+
+  }
+  .cart-table td {
+    border: none;
+    padding: 15px;
+    text-align: center;
+  }
+  .cart-table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+  }
+  .cart-table td:nth-child(2 ){
+    width: 150px;
+    text-align: center;
+  }
+  .cart-table td:nth-child(3) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+  }
+
+  .cart-table img {
+    width: 200px;
+    margin-bottom: 5px;
+  }
+  .cart-table thead {
+    border:1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+  }
+  .cart-summary {
+    width: 50%;
+    border: none;
+    padding: 30px;
+    background: #f5e7e7;
+    margin-right: 50px;
+  }
+  
+  .cart-summary h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .cart-summary h2{
+    margin: 10px 20px;
+    gap: 20px;
+  }
+  
+  #checkout {
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-size:1.5rem ;
+    border:1px solid #333;
+    background:#f5e7e7;
+    color:black;
+    cursor:pointer;
+  }
+  
+  .cart-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background: #f3f3f3;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  
+  .cart-footer .features .fe-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
